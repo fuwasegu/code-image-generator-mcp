@@ -2,9 +2,6 @@
 
 An MCP server that generates beautiful source code images with syntax highlighting, similar to [Carbon](https://carbon.now.sh/). Designed to be used by AI agents (e.g., slide generation agents) via the Model Context Protocol.
 
-![TypeScript example](https://github.com/user-attachments/assets/placeholder-ts.png)
-![Python example](https://github.com/user-attachments/assets/placeholder-py.png)
-
 ## Features
 
 - VS Code-quality syntax highlighting powered by [Shiki](https://shiki.style/)
