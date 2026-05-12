@@ -38,7 +38,7 @@ jobs:
       - name: Publish
         run: |
           if [ "${{ github.event.repository.visibility }}" = "public" ]; then
-            npm publish --provenance --access public
+            npm publish --provenance --access public || npm publish --access public
           else
             npm publish --access public
           fi
