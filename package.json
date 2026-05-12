@@ -1,14 +1,18 @@
 {
-  "name": "code-image-generator-mcp",
+  "name": "@fuwasegu/code-image-generator-mcp",
   "version": "1.0.0",
   "description": "MCP server that generates beautiful source code images like Carbon",
   "type": "module",
   "bin": {
     "code-image-generator-mcp": "dist/index.js"
   },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",

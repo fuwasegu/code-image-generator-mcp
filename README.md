@@ -1,4 +1,4 @@
-# code-image-generator-mcp
+# @fuwasegu/code-image-generator-mcp
 
 An MCP server that generates beautiful source code images with syntax highlighting, similar to [Carbon](https://carbon.now.sh/). Designed to be used by AI agents (e.g., slide generation agents) via the Model Context Protocol.
 
@@ -11,24 +11,24 @@ An MCP server that generates beautiful source code images with syntax highlighti
 - No browser dependency — fast SVG-based rendering with [Sharp](https://sharp.pixelplumbing.com/)
 - Returns both a saved PNG file and inline base64 image
 
-## Installation
+## Setup
+
+### Claude Code
 
 ```bash
-git clone https://github.com/yourname/code-image-generator-mcp.git
-cd code-image-generator-mcp
-npm install
+claude mcp add code-image-generator -- npx @fuwasegu/code-image-generator-mcp
 ```
 
-## MCP Configuration
+### Claude Desktop / MCP Client
 
-Add to your MCP client config (e.g., Claude Desktop `claude_desktop_config.json`):
+Add to your config (e.g., `claude_desktop_config.json`):
 
 ```json
 {
   "mcpServers": {
     "code-image-generator": {
-      "command": "node",
-      "args": ["/absolute/path/to/code-image-generator-mcp/dist/index.js"]
+      "command": "npx",
+      "args": ["@fuwasegu/code-image-generator-mcp"]
     }
   }
 }
