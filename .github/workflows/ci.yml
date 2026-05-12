@@ -29,5 +29,8 @@ jobs:
         run: npm ci
         timeout-minutes: 5
 
+      - name: Check (Biome)
+        run: npm run check
+
       - name: Build
         run: npm run build
