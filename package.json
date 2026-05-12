@@ -1,0 +1,23 @@
+{
+  "name": "code-image-generator-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that generates beautiful source code images like Carbon",
+  "type": "module",
+  "bin": {
+    "code-image-generator-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "shiki": "^3.4.2",
+    "sharp": "^0.34.1",
+    "zod": "^3.25.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "typescript": "^5.8.3"
+  }
+}
